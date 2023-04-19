@@ -9,32 +9,14 @@
   "EULA": "",
   "help": "https://github.com/madsgroth/Generic-Integration",
   "url": "https://github.com/madsgroth/Generic-Integration",
-  "logo": "./res/images/logo.png",
   "dependencies": [
     {
       "id": "4b915d7e-c02a-435f-85ab-649086c1e002",
       "name": "Continia Core",
       "publisher": "Continia Software",
       "version": "8.0.0.0"
-  },
-  {
-      "id": "0745e76d-0b72-4641-87c2-ee45db5d2c32",
-      "name": "Continia Delivery Network",
-      "publisher": "Continia Software",
-      "version": "5.0.0.0"
-  },
-    {
-      "id": "6da8dd2f-e698-461f-9147-8e404244dd85",
-      "name": "Continia Document Capture",
-      "publisher": "Continia Software",
-      "version": "11.0.0.0"
-    },
-    {
-      "id": "88cf5d4c-8afc-4a98-9cb7-212196c51d74",
-      "name": "Continia OPplus",
-      "publisher": "Continia Software",
-      "version": "22.0.0.0"
-    }
+  }
+
   ],
   "platform": "1.0.0.0",
   "application": "21.0.0.0",

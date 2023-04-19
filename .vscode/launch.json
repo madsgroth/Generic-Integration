@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "BC22 CC8.00 Generic Integration",
+            "server": "https://demoportaldev.continiaonline.com",
+            "port": 443,
+            "serverInstance": "922f5588-a6e7-4f38-bc82-96754d4d5fe0",
+            "tenant": "default",
+            "authentication": "UserPassword",
+            "schemaUpdateMode": "Synchronize",
+            "disableHttpRequestTimeout": true
+        }
+    ]
+}

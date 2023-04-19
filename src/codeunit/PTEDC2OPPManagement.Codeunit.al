@@ -1,4 +1,4 @@
-codeunit 61153 "PTE DC2OPP Management"
+/*codeunit 61153 "PTE DC2OPP Management"
 {
     // SRA: We need this code at them moment if we do not want to create a DOCTYPE header field which is queried by DC code
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"CDC Purch. Doc. - Management", 'OnBeforeIsDocMatched', '', true, true)]
@@ -19,3 +19,4 @@ codeunit 61153 "PTE DC2OPP Management"
     end;
 
 }
+*/

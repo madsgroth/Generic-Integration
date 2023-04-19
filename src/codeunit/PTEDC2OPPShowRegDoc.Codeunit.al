@@ -1,4 +1,4 @@
-codeunit 61155 "PTE DC2OPP Show. Reg. Doc."
+/*codeunit 61155 "PTE DC2OPP Show. Reg. Doc."
 {
     TableNo = 6085590;
 
@@ -18,3 +18,4 @@ codeunit 61155 "PTE DC2OPP Show. Reg. Doc."
         end;
     end;
 }
+*/

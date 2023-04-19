@@ -1,4 +1,4 @@
-codeunit 61152 "PTE DC2OPP Line Validation"
+/*codeunit 61152 "PTE DC2OPP Line Validation"
 {
     // C/SIDE
     // revision:23
@@ -42,7 +42,7 @@ codeunit 61152 "PTE DC2OPP Line Validation"
             Skip := TRUE;
             EXIT;
         END;
-        */
+        
         Field.SETRANGE("Template No.", Rec."Template No.");
         Field.SETRANGE(Type, Field.Type::Line);
         Field.SetRange(Required, true);
@@ -94,7 +94,7 @@ codeunit 61152 "PTE DC2OPP Line Validation"
             END;
 
         OK := LineAmount = LineAmount2;
-        */
+        
 
         Rec.OK := TRUE;
 
@@ -106,3 +106,4 @@ codeunit 61152 "PTE DC2OPP Line Validation"
     begin
     end;
 }
+*/

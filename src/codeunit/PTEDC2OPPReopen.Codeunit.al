@@ -1,4 +1,4 @@
-codeunit 61154 "PTE DC2OPP Reopen"
+/*codeunit 61154 "PTE DC2OPP Reopen"
 {
     TableNo = 6085590;
 
@@ -29,3 +29,4 @@ codeunit 61154 "PTE DC2OPP Reopen"
         DoYouWantToReopenQst: Label 'Do you want to reopen the document?';
         AlreadyOpenErr: Label '%1 is already open.';
 }
+*/

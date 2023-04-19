@@ -1,4 +1,4 @@
-codeunit 61150 "OPP DC Avis - Register"
+/*codeunit 61150 "OPP DC Avis - Register"
 {
     TableNo = "CDC Document";
 
@@ -133,3 +133,4 @@ codeunit 61150 "OPP DC Avis - Register"
         CaptureMgnt: Codeunit "CDC Capture Management";
         RecRef: RecordRef;
 }
+*/

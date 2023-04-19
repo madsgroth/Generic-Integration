@@ -1,4 +1,4 @@
-codeunit 61151 "PTE DC2OPP Doc Validation"
+/*codeunit 61151 "PTE DC2OPP Doc Validation"
 {
     // C/SIDE
     // revision:63
@@ -68,7 +68,7 @@ codeunit 61151 "PTE DC2OPP Doc Validation"
                 END;
             END;
         END;
-*/
+
         // *********************************************************************************************************************************
         // WARN IF DIFFERENT DATE FORMATS ARE USED ON FIELDS
         // *********************************************************************************************************************************
@@ -132,7 +132,7 @@ codeunit 61151 "PTE DC2OPP Doc Validation"
                         END;
                     END;
                 END;
-        */
+        
         // *********************************************************************************************************************************
         // BUILD LINES TABLE AND CHECK THE LINES
         // *********************************************************************************************************************************
@@ -165,7 +165,7 @@ codeunit 61151 "PTE DC2OPP Doc Validation"
                             END;
                         END;
                     END;
-                */
+                
         IsValid := IsValid AND ValidateLines(Template, Rec, DocumentLine);
         IsValid := IsValid AND ValidateAmtAccounts(Rec, Template);
         OnAfterValidateDocument(Rec, Template, IsValid);
@@ -209,7 +209,7 @@ codeunit 61151 "PTE DC2OPP Doc Validation"
                         IsValid := FALSE;
                     END;
             UNTIL DocumentLine.NEXT = 0;
-        */
+        
         EXIT(IsValid);
     end;
 
@@ -282,4 +282,4 @@ codeunit 61151 "PTE DC2OPP Doc Validation"
     local procedure OnAfterValidateDocument(var Document: Record "CDC Document"; Template: Record "CDC Template"; var IsValid: Boolean)
     begin
     end;
-}
+}*/
