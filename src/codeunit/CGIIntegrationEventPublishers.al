@@ -2,18 +2,28 @@ codeunit 73900 "CGI Integration Event Pub."
 {
 
     [IntegrationEvent(false, false)]
-    local procedure OnDataEntityCreate(IntegrationID: Text; ProductCode: Text; PrimaryKey: Text);
-    var
-
-        IntegrationMgt: Codeunit "CGI Integration Mgt.";
-
-
-
+    procedure OnDataEntityCreate(IntegrationID: Text; ProductCode: Text; PrimaryKey: Text);
     begin
-        if not IntegrationMgt.IsItegrationActive(IntegrationID))
-        then exit;
+    end;
 
+    [IntegrationEvent(false, false)]
+    procedure OnDataEntityModify(IntegrationID: Text; ProductCode: Text; PrimaryKey: Text);
+    begin
+    end;
 
+    [IntegrationEvent(false, false)]
+    procedure OnDataEntityDelete(IntegrationID: Text; ProductCode: Text; PrimaryKey: Text);
+    begin
+    end;
+
+    [IntegrationEvent(false, false)]
+    procedure OnGetDataEntity(IntegrationID: Text; ProductCode: Text; PrimaryKey: Text; var Data: JsonObject);
+    begin
+    end;
+
+    [IntegrationEvent(false, false)]
+    procedure OnGetDataEntityIsReady(IntegrationID: Text; ProductCode: Text; PrimaryKey: Text; var Data: JsonObject);
+    begin
     end;
 
 }
