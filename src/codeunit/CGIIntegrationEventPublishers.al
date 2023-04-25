@@ -17,12 +17,12 @@ codeunit 73900 "CGI Integration Event Pub."
     end;
 
     [IntegrationEvent(false, false)]
-    procedure OnGetDataEntity(IntegrationID: Text; ProductCode: Text; PrimaryKey: Text; var Data: JsonObject);
+    procedure GetDataEntity(IntegrationID: Text; ProductCode: Text; PrimaryKey: Text; var Data: JsonObject);
     begin
     end;
 
     [IntegrationEvent(false, false)]
-    procedure OnGetDataEntityIsReady(IntegrationID: Text; ProductCode: Text; PrimaryKey: Text; var Data: JsonObject);
+    procedure DataEntityIsReady(IntegrationID: Text; ProductCode: Text; PrimaryKey: Text; var Data: JsonObject);
     begin
     end;
 

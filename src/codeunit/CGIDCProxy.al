@@ -42,7 +42,7 @@ codeunit 73902 "CGI DC Proxy"
 
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"CGI Integration Event Pub.", 'OnGetDataEntity', '', true, true)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"CGI Integration Event Pub.", 'GetDataEntity', '', true, true)]
     local procedure OnGetDataEntity(IntegrationID: Text; ProductCode: Text; PrimaryKey: Text; var Data: JsonObject)
     var
         IntegrationMgt: Codeunit "CGI Integration Mgt.";
@@ -50,7 +50,7 @@ codeunit 73902 "CGI DC Proxy"
     begin
         if IntegrationMgt.IsItegrationActive(IntegrationID) then begin
             GetDCDoc(PrimaryKey, Data);
-            Integrationevents.OnGetDataEntityIsReady(IntegrationID, ProductCode, PrimaryKey, Data);
+            Integrationevents.DataEntityIsReady(IntegrationID, ProductCode, PrimaryKey, Data);
         end;
 
     end;

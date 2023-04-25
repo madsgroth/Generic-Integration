@@ -25,14 +25,14 @@ codeunit 73903 "CGI OPP Proxy"
         Data: JsonObject;
     begin
         if IntegrationMgt.IsItegrationActive(IntegrationID) then begin
-            IntegrationEvents.OnGetDataEntity(IntegrationID, ProductCode, PrimaryKey, Data);
+            IntegrationEvents.GetDataEntity(IntegrationID, ProductCode, PrimaryKey, Data);
 
         end;
 
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"CGI Integration Event Pub.", 'OnGetDataEntityIsReady', '', false, false)]
-    local procedure OnGetDataEntityIsReady(IntegrationID: Text; ProductCode: Text; PrimaryKey: Text; var Data: JsonObject)
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"CGI Integration Event Pub.", 'DataEntityIsReady', '', false, false)]
+    local procedure OnDataEntityIsReady(IntegrationID: Text; ProductCode: Text; PrimaryKey: Text; var Data: JsonObject)
     begin
         ProcessDCDocument(IntegrationID, ProductCode, PrimaryKey, Data);
     end;
